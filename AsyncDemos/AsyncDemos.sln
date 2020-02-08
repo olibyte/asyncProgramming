@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicWindowsForms", "ClassicWindowsForms\ClassicWindowsForms.csproj", "{084EB0FC-49E7-46B9-BA04-6F2D1E5FA869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingConcepts", "ProgrammingConcepts\ProgrammingConcepts.csproj", "{2286E2FD-1857-485E-86F1-FEFD70EB1CD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{084EB0FC-49E7-46B9-BA04-6F2D1E5FA869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084EB0FC-49E7-46B9-BA04-6F2D1E5FA869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084EB0FC-49E7-46B9-BA04-6F2D1E5FA869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084EB0FC-49E7-46B9-BA04-6F2D1E5FA869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2286E2FD-1857-485E-86F1-FEFD70EB1CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2286E2FD-1857-485E-86F1-FEFD70EB1CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2286E2FD-1857-485E-86F1-FEFD70EB1CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2286E2FD-1857-485E-86F1-FEFD70EB1CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
