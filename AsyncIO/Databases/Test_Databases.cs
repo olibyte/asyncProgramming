@@ -35,7 +35,32 @@ namespace Databases
                 }
             }
         }
+        [TestMethod]
+        public async Task Test_DB_AsyncAwait()
+        {
+            string connectionString;
+            #region Assign connectionString
+            connectionString = "";
+            #endregion
 
+            string sqlSelect = "SELECT @@VERSION";
+
+            using (var sqlConnection = new SqlConnection(connectionString))
+            {
+                await sqlConnection.OpenAsync();
+
+                using (var sqlCommand = new SqlCommand(sqlSelect, sqlConnection))
+                {
+                    using (var reader = await sqlCommand.ExecuteReaderAsync())
+                    {
+                        while (reader.Read())
+                        {
+                            var data = reader[0].ToString();
+                        }
+                    }
+                }
+            }
+        }
         [TestMethod]
         public void Test_DB_Async()
         {

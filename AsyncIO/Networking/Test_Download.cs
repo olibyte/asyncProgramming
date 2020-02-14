@@ -25,6 +25,19 @@ namespace Networking
         }
 
         [TestMethod]
+        public async Task Test_Download_delsinkdotcom_AsyncAwait()
+        {
+            var httpRequestInfo = HttpWebRequest.CreateHttp(url);
+            var httpResponseInfo = await httpRequestInfo.GetResponseAsync();
+
+            var responseStream = httpResponseInfo.GetResponseStream();
+            using (var sr = new StreamReader(responseStream))
+            {
+                var webPage = sr.ReadToEnd();
+            }
+        }
+
+        [TestMethod]
         public void Test_Download_delsinkdotcom_BeginEnd()
         {
             var httpRequestInfo = HttpWebRequest.CreateHttp(url);
